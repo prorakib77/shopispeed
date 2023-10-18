@@ -1,0 +1,337 @@
+
+
+
+/* // Extra large devices  */
+@media (min-width: 1200px) {  }
+
+
+/* // Large devices  */
+@media (min-width: 992px) and (max-width: 1199.98px) {  }
+
+/* // Medium devices  */
+@media (min-width: 768px) and (max-width: 991.98px) {  }
+
+/* // Small devices  */
+@media (min-width: 576px) and (max-width: 767.98px) {  }
+
+/* // Extra small devices  */
+@media (max-width: 575.98px) { 
+    
+/* menu responsive  */
+.navbar-brand img {
+    height: 26px;
+}
+
+.navbar-toggler span{
+    color: #fff;
+    font-size: 28px;
+    vertical-align: middle;
+    margin-top: 10px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.navbar-toggler span:hover{
+    color: #FC573B;
+}
+
+.nav_btns {
+display: none;
+}
+
+/* menu responsive  */
+
+/* banner part responsive  */
+#banner .banner_left h1 {
+	font-size: 33px;
+}
+#banner {
+	padding-top: 95px;
+	padding-bottom: 0px;
+}
+#banner .banner_left h3 {
+	font-size: 22px;
+	line-height: 26px;
+	padding: 10px 0px;
+}
+#banner .banner_left h1 {
+	font-size: 25px;
+	line-height: 24px;
+}
+#banner .banner_left h1::after {
+	height: 79px;
+	width: 2px;
+	top: 2px;
+	left: -8px;
+
+}
+#banner .banner_left a {
+	color: #f2f2f2;
+	font-size: 10px;
+	margin-bottom: 10px;
+}
+.banner_right{
+    display: none;
+}
+#counter .counter_common .cc_btm_text h3 {
+	font-size: 22px;
+	margin-top: 30px;
+	margin-bottom: 8px;
+}
+/* banner part responsive  */
+/* slider part responsive  */
+#service_header .ser_header h2 {
+	font-size: 29px;
+	line-height: 36px;
+}
+
+
+/* service part  */
+#service {
+	padding: 0px 0px;
+}
+/* service part  */
+/* slider part responsive  */
+
+
+
+
+
+
+
+/* counter part  */
+#counter {
+	padding: 20px 0px;
+}
+#counter .counter_common {
+	padding: 5px;
+}
+.cc_top_img img{
+	height: 20px;
+}
+#counter .counter_common .cc_btm_text h3 {
+	font-size: 18px;
+	margin-top: 7px;
+}
+
+#counter .counter_common .cc_btm_text p {
+	font-size: 7px;
+	line-height: 10px;
+}
+/* counter part  */
+
+/* we can do part  */
+/* we can do part  */
+#service_header .ser_header h2 {
+	font-size: 18px;
+	line-height: 2px;
+}
+/* we can do part  */
+
+
+/* service card part  */
+#service .card {
+	border-radius: 10px;
+	margin: 11px 5px;
+}
+#service .image-content {
+	padding: 0px 0;
+}
+#service .card-image {
+	height: 60px;
+	width: 98px;
+	padding: 1px;
+}
+
+#service .name {
+	font-size: 6px;
+	z-index: 99;
+	margin-bottom: 0px;
+}
+
+.card-content img{
+	z-index: 99;
+}
+
+#service .overlay::before, #service .overlay::after {
+	bottom: -13px;
+	height: 15px;
+	width: 15px;
+
+}
+
+
+#service .button {
+	/* border: none; */
+	font-size: 8px;
+	padding: 5px 0px;
+	border-radius: 5px;
+	margin: -2px;
+
+}
+/* service card part  */
+
+/* shopify expert hier  */
+#detail .detail_main h2 {
+	font-size: 16px;
+	margin-bottom: 21px;
+	line-height: 24px;
+}
+/* shopify expert hier  */
+
+
+
+#ecommerce .ecom_main h2 {
+	font-size: 16px;
+}
+#ecommerce .ecom_main p {
+	font-size: 13px;
+	padding: 21px 0px;
+	line-height: 17px;
+}
+
+#ecommerce .ecom_main a {
+	font-size: 14px;
+	line-height: 1;
+	padding: 13px 14px;
+}
+
+#clint_feedback_heading .clint_fb_heading {
+	padding: 24px 0px;
+}
+#clint_feedback_heading .clint_fb_heading h2 {
+	font-size: 18px;
+}
+
+#clint_feedback_body .feedback_main p {
+	font-weight: 500;
+	font-size: 11px;
+	line-height: 17px;
+}
+#clint_feedback_body .feedback_main {
+	margin-bottom: 10px;
+}
+
+#Industry .ind_heading h2 {
+	font-size: 18px;
+}
+#Industry .ind_heading {
+	padding: 23px 0px;
+}
+#partner .partner_main img {
+	height: 45px;
+}
+
+#partner {
+	background: var(--section-background-color-five);
+	padding: 24px 0px;
+}
+
+#footer .proposal_heading p {
+	font-size: 13px;
+}
+#footer .proposal_heading h2 {
+	font-size: 18px;
+}
+#footer .proposal_heading p {
+	font-size: 12px;
+}
+.sub_form_main .subscribe-form {
+	padding: 0px 0px 0px 10px;
+	font-size: 11px;
+	margin-right: 8px;
+}
+.sub_form_main .sub_btn {
+	font-size: 8px;
+	padding: 14px 17px;
+}
+
+
+.foot_detail {
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+.foot_detail .footer_common h3 {
+	font-size: 18px;
+}
+.foot_detail .footer_common ul li a {
+	font-size: 12px;
+}
+.foot_detail .footer_common a {
+	font-size: 12px;
+}
+.foot_detail .footer_common a .fa-whatsapp {
+	font-size: 18px;
+}
+.foot_detail .footer_common a .fa-envelope {
+	font-size: 18px;
+}
+#copyright p {
+	font-size: 10px;
+}
+.back-to-top {
+	height: 40px;
+	width: 40px;
+	bottom: 45px;
+	right: 8px;
+	line-height: 40px;
+}
+
+
+/* ********************#########service page responsive ********************######### */
+#pricing .pricing_head h3 {
+	font-size: 18px;
+}
+#pricing {
+	padding-top: 97px;
+}
+#pricing .pricing_head p {
+	font-size: 12px;
+	margin-top: 12px;
+}
+#pricing .pricing_head {
+	padding-bottom: 24px;
+}
+#pricing .pricing_left h3 {
+	font-size: 14px;
+	line-height: 20px;
+	padding-top: 8px;
+}
+#pricing .ser_include h3 {
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: 600;
+}
+#pricing .ser_include ul li {
+	font-size: 14px;
+}
+#pricing .ser_include h3 {
+	font-size: 16px;
+	padding-bottom: 10px;
+}
+/* ********************#########service page responsive ********************######### */
+.nav_btns {
+	display: none;
+}
+/* ********************#########portfolio page responsive ********************######### */
+#port_header {
+	padding: 35px 0px;
+}
+#port_header .port_head p {
+	font-size: 15px;
+	padding-top: 18px;
+	line-height: 16px;
+}
+#port_body {
+	padding-bottom: 15px;
+}
+/* ********************#########portfolio page responsive ********************######### */
+/* ********************#########service page responsive ********************######### */
+/* ********************#########service page responsive ********************######### */
+ }
+
+
+
+
