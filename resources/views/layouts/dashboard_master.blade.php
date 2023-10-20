@@ -21,7 +21,7 @@
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="author" content="Dmitry Volkov">
-	<title>HotFlix – Online Movies, TV Shows & Cinema HTML Template</title>
+	<title>Shopispeed</title>
 
 </head>
 <body>
@@ -48,7 +48,7 @@
 	<!-- sidebar -->
 	<div class="sidebar">
 		<!-- sidebar logo -->
-		<a href="index.html" class="sidebar__logo">
+		<a href="{{ url('/') }}" target="_blank" class="sidebar__logo">
 			<img src="{{ asset('admin') }}/img/logo.svg" alt="Site_logo">
 		</a>
 		<!-- end sidebar logo -->
@@ -81,7 +81,7 @@
 		<div class="sidebar__nav-wrap">
 			<ul class="sidebar__nav">
 				<li class="sidebar__nav-item">
-					<a href="index.html" class="sidebar__nav-link sidebar__nav-link--active"><i class="icon ion-ios-keypad"></i> <span>Dashboard</span></a>
+					<a href="{{ route('dashboard') }}" class="sidebar__nav-link sidebar__nav-link--active"><i class="icon ion-ios-keypad"></i> <span>Dashboard</span></a>
 				</li>
 
 				<li class="sidebar__nav-item">
@@ -113,6 +113,15 @@
 						<li><a href="add-item.html">Add Users</a></li>
 						<li><a href="add-item.html">All Users</a></li>
 						<li><a href="edit-user.html">Pendind user</a></li>
+					</ul>
+				</li>
+				<li class="sidebar__nav-item">
+					<a class="sidebar__nav-link" data-toggle="collapse" href="#collapseMenuss" role="button" aria-expanded="false" aria-controls="collapseMenuss"><i class="icon ion-ios-contacts"></i> <span>Settings</span> <i class="icon ion-md-arrow-dropdown"></i></a>
+
+					<ul class="collapse sidebar__menu" id="collapseMenus">
+						<li><a href="add-item.html">General Settings</a></li>
+						<li><a href="add-item.html">Users Settings</a></li>
+						<li><a href="edit-user.html">Advance Settings</a></li>
 					</ul>
 				</li>
 				<!-- end collapse -->
@@ -169,6 +178,8 @@
 	<script src="{{ asset('admin') }}/js/jquery.mousewheel.min.js"></script>
 	<script src="{{ asset('admin') }}/js/jquery.mCustomScrollbar.min.js"></script>
 	<script src="{{ asset('admin') }}/js/select2.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	<script src="{{ asset('admin') }}/js/admin.js"></script>
+	@yield('alert_jvs')
 </body>
 </html>
