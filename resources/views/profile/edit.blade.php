@@ -204,6 +204,7 @@
                             <div class="row row--form">
                                 <div class="col-12">
                                     <h4 class="form__title">Profile details</h4>
+                                    <h4>{{ Auth::user()->profile_photo }}</h4>
                                 </div>
 
                                 <div class="col-12 col-md-6 col-lg-12 col-xl-12">
@@ -211,7 +212,7 @@
                                     @if (Auth::user()->profile_photo)
                                         <div class="pictures-container">
                                             <div class="pictures">
-                                                <img src="assets/img/Images.png" class="picture-src"
+                                                <img src="{{ asset('admin/uploads/profile_photo') }}/{{ Auth::user()->profile_photo }}" class="picture-src"
                                                     id="wizardPicturePreview" title="" />
                                                 <input type="file" name="profile_photo" id="wizard-picture"
                                                     aria-invalid="false" class="valid" accept="image/*" />
@@ -570,4 +571,21 @@
         }
     </script>
     {{-- for profile picture   --}}
+@endsection
+
+@section('alert_jvs')
+
+@if (session('profile_photo_success'))
+
+<script>
+    Swal.fire({
+        icon:'success',
+        title: 'Your profile image has been saved successfully',
+        showConfirmButton: false,
+        timer: 3000
+    })
+</script>
+    
+@endif
+
 @endsection

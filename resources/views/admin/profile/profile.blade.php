@@ -54,7 +54,7 @@
                 <!-- or red -->
                 <div class="profile__meta profile__meta--green">
                     <h3>{{ Auth::user()->name }} <span>(Approved)</span></h3>
-                    <span>HotFlix ID: {{ Auth::user()->id }}</span>
+                    <span>Shopispeed ID: {{ Auth::user()->id }}</span>
                 </div>
             </div>
             <!-- end profile user -->
@@ -130,7 +130,7 @@
                                     <div class="mb-3 col-12 col-md-6 col-lg-12 col-xl-12">
                                         <div class="pictures-container">
                                             <div class="pictures">
-                                                <img src="{{ asset('admin/profile_photo') }}/deafult_profile.webp"
+                                                <img src="{{ asset('admin/uploads/profile_photo') }}/{{ Auth::user()->profile_photo }}"
                                                     class="picture-src" alt="" />
 
                                             </div>
@@ -142,7 +142,6 @@
                                             <div class="pictures">
                                                 <img src="{{ asset('admin/uploads/profile_photo') }}/deafult_profile.webp"
                                                     class="picture-src" alt="" />
-
                                             </div>
                                         </div>
                                     </div>

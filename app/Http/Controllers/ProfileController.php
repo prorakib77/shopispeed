@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\View\View;
 use Intervention\Image\ImageManagerStatic as Image;
+use App\Models\User;
+
 
 class ProfileController extends Controller
 {
@@ -70,16 +72,18 @@ public function profile_photo(Request $request)
     $request->validate([
         'profile_photo'=> 'required|image'
     ]);
+    if (Auth::user()->profile_photo) {
+        unlink(base_path('public/admin/uploads/profile_photo/' . Auth::user()->profile_photo));
+    }
     $profileimg_new_name = Auth::user()->id . "." . $request->file('profile_photo')->getClientOriginalExtension();
-    $profileImg = image::make($file->path())->fit(300);
-    $profileImg->save(base_path('public/admin/uploads/profile_photos' . $profileimg_new_name), 80);
+    $profileImg = Image::make($request->file('profile_photo')->path())->resize(300, 300);
+    $profileImg->save(base_path('public/admin/uploads/profile_photo/' . $profileimg_new_name), 80);
 
-    dd($profileimg_new_name);
-    user::find(auth()->user()->id)->update([
-        'profile_photo'=> $profileimg_new_name
+    // dd($profileimg_new_name);
+    User::find(auth()->id())->update([
+        'profile_photo' => $profileimg_new_name,
     ]);
-
-    return Redirect::to('profile');
+    return back()->with('profile_photo_success', 'Your profile image has been saved successfully');
 }
 // profile photo
 }
